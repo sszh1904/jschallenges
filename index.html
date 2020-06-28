@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>JavaScript</title>
+</head>
+<body>
+<!----------      Challenge 1     ---------->
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    
+<!----------      Challenge 2     ---------->
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <div class="button-container">
+            <button class="btn btn-success" id="cat-generator" onclick="generateCat()" >Generate Cat</button>
+        </div>
+        
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+    
+<!----------      Challenge 3     ---------->
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Raised_Fist_Emoji_Icon_ios10_1024x1024.png?v=1571606092" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="paper" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Raised_Hand_With_Fingers_Splayed_Emoji_Icon_ios10_grande.png?v=1571606092" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/76/victory-hand_270c.png" height="150" width="150" alt="" onclick="rpsGame(this)">
+
+        </div>
+    </div>
+    
+<!----------      Challenge 4     ---------->
+    <div class="container-4">
+        <h2 id="change-colour">Challenge 4: Change Button Colour</h2>
+        <div class="flex-box-pick-colour">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColourChange(this)">
+                    <option value="random">Random</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>   
+            </form>
+            
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+    
+<!----------      Challenge 5     ---------->
+    <div class="container-5">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's play!</span></h3>
+        
+        <div class="flex-blackjack-row1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        
+        <div class="flex-blackjack-row2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="deal-button">Deal</button>
+            </div>
+        </div>
+        
+        <div class="flex-blackjack-row3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
